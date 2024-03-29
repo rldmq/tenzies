@@ -4,6 +4,12 @@ import Die from "./Die.jsx"
 
 export default function App(){
 
+    window.newDice = newDice
+    window.createDie = createDie
+    window.randomNumbers = randomNumbers
+    window.holdDie = holdDie
+    window.handleRoll = handleRoll
+
     const [dice, setDice] = React.useState(newDice())
     const [winState, setWinState] = React.useState(false)
 
